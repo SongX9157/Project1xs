@@ -1,70 +1,168 @@
 <html>
-    <head>
-        <title>learn1</title>
+    <header>
+        <title>Song's video games</title>
         <link rel="stylesheet" type="text/css">
         <style type="text/css">
 
-        .dropdown-content {
-            display: none;
-            position: relative;
-            background-color: #2e3842;
-            min-width: 160px;
-            text-align:center;
+        html, body,h1, h2, p, a, ul, li, label,
+        article, footer, header, menu, nav, section{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
         }
-
-        .dropbtn {
-        background-color: #2e3842;
-        color: white;
-        padding:16px;
-        font-size: 16px;
-        border: none;
         
+        .toolbar{
+            background-color: #1d242a;
+            position:fixed;
+            width:100%;
         }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
+        body {
+		background: #2e3842;
+	}
+
+        a{
+            text-decoration: none;
+            color:#fff
         }
 
-
-        .dropdown:hover .dropdown-content {
-            display: block;
+        h1{
+            color: #fff;
+            font-weight: 800;
+            letter-spacing: 4px;
+            line-height: 14px;
+            margin: 0 0 15 0;
+            text-transform: uppercase;
+            padding:10px;
         }
 
-        .dropdown:hover .dropdown-content2 {
-            display: block;
+        #menu { 
+        font:12px verdana, arial, sans-serif;
         }
 
-        .dropdown-content a:hover {background-color: #778899}
-
-
-
-        .dropdown:hover .dropbtn {
-            background-color: #2e3842;
+        #menu, #menu li {
+        list-style:none;
+        padding:0; 
+        margin:0; 
         }
 
+        #menu li a:hover {
+        background:#146C9C; 
+        color:#fff; 
+        }
+        
+        #menu li { 
+        float:left;
+        }
+        
+        #menu li a {
+            display:block; 
+            width:100px; 
+            height:30px; 
+            line-height:30px; 
+            text-align:center; 
+            background:rgb(49, 61, 70); 
+            color:#fff; 
+            text-decoration:none; 
+            border-right:1px solid rgb(122, 119, 119); 
+        }
+        
 
+        #footer {
+            padding: 6em 0 4em 0 ;
+            background-color: #1d242a;
+            text-align: center;
+            
+        }
+
+		#footer .icons {
+			font-size: 22px;
+		}
+        .il{
+            display: inline;
+        }
+     
+		#footer .icons a,.fp {
+			color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+		}
+
+       
+
+		#footer .icons a:hover {
+			color: #fff;
+		}
+
+        .cn{height:1000px; background:#ccc; }
+        
+        .scroll{
+            padding-top: 90px;
+            padding-bottom: 90px;
+            text-align: center;
+            
+        }
+        .scroll p{
+            margin-right:65% ;
+            font-size: larger;
+            text-transform: uppercase;
+            color:#fff; 
+            padding:10px;
+        }
+
+        .scrinner{
+            margin: 10px;
+            
+        }
+        
+        .text1{
+            background-image: steelblue;
+        }
+        img{
+            width:60%;
+            height:50%;
+            margin: 0 auto;
+            
+        }
+		
         </style>
-    </head>
+    </header>
     <body>
-        <div1>
-            <header>
-                <div class="dropdown">
-                    <button class="dropbtn">The Menu of web</button> 
-                    <div class="dropdown-content">
-                        <a href="https://www.w3schools.com/cssref/sel_hover.asp" target="_blank">part 1</a>
-                        <a href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">part 2</a>
-                        <a href="" target="_blank">part 3</a>
-                    </div>
-                </div>
-            </header>
-        </div1>
-      
+        <div class="titlebar">
+          <div class="toolbar">
+          <h1><a href="#cn">Song's game recomendaiton</a></h1>
+          </div>  
+        </div>
+        <div class="scroll" >
+            <div class="text1">
+            <p>Some recommended games</p>
+            </div>
+            <div class="scrinner">
+            <img src="新建文件夹 (3)/30f99676956da2452efbfd3677623b62712137c2.jpg">
+            </div>
+        </div>
+
+        <div>
+            <ul id="menu">
+                <li><a href="">game1</a></li>
+                <li><a href="">game2</a></li>
+                <li><a href="">game3</a></li>
+                <li><a href="">game4</a></li>
+                </ul>
+        </div>
+        <div>
+        <footer id="footer">
+            <p class="fp">You can view these page</p>
+            <ul class="icons">
+                <li class="il"><a href="#" >Twitter</a></li>
+                <li class="il"><a href="#" >Facebook</a></li>
+                <li class="il"><a href="#" >Steam</a></li>
+                <li class="il"><a href="#" >Email</a></li>
+            </ul>
+            
+        </footer>
+    </div>
     </body>
 </html>

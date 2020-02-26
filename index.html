@@ -39,8 +39,15 @@
             padding:10px;
         }
 
+        
+        .menu{
+            width:auto;
+            height:800px;
+            background-color:rgb(49, 61, 70);
+        }
         #menu { 
         font:12px verdana, arial, sans-serif;
+        
         }
 
         #menu, #menu li {
@@ -70,33 +77,41 @@
             border-right:1px solid rgb(122, 119, 119); 
         }
         
+        .menucontent{
+            background-color:rgb(49, 61, 70);  
+            height:32px;
+            border-top:1px solid #fff;
+            border-bottom:1px solid #fff ;
+        }
 
-        #footer {
-            padding: 6em 0 4em 0 ;
+        .footer {
+           
             background-color: #1d242a;
             text-align: center;
+            height:60px;
             
         }
 
-		#footer .icons {
+		.footer .icons {
 			font-size: 22px;
 		}
         .il{
             display: inline;
         }
      
-		#footer .icons a,.fp {
+		.footer .icons a,#fp {
 			color: rgba(255, 255, 255, 0.5);
             text-decoration: none;
+            
 		}
 
        
 
-		#footer .icons a:hover {
+		.footer .icons a:hover {
 			color: #fff;
 		}
 
-        .cn{height:1000px; background:#ccc; }
+        
         
         .scroll{
             padding-top: 90px;
@@ -104,13 +119,7 @@
             text-align: center;
             
         }
-        .scroll p{
-            margin-right:65% ;
-            font-size: larger;
-            text-transform: uppercase;
-            color:#fff; 
-            padding:10px;
-        }
+     
 
         .scrinner{
             margin: 10px;
@@ -118,11 +127,16 @@
         }
         
         .text1{
-            background-image: steelblue;
+            
+            margin-right:65% ;
+            font-size: larger;
+            text-transform: uppercase;
+            color:#fff; 
+            padding:10px;
         }
         img{
             width:60%;
-            height:50%;
+            
             margin: 0 auto;
             
         }
@@ -132,37 +146,37 @@
     <body>
         <div class="titlebar">
           <div class="toolbar">
-          <h1><a href="#cn">Song's game recomendaiton</a></h1>
+          <h1><a  href="javascript:scroll(0,0);">Song's game recomendaiton</a></h1>
           </div>  
         </div>
         <div class="scroll" >
             <div class="text1">
-            <p>Some recommended games</p>
+                <a onclick="window.scrollTo(0,0);">Some recommended games</a>
             </div>
-            <div class="scrinner">
-            <img src="images//30f99676956da2452efbfd3677623b62712137c2.jpg">
+            <div class="scrinner"><a href="https://www.zelda.com/" target="blank">
+            <img src="images//30f99676956da2452efbfd3677623b62712137c2.jpg"></a>
             </div>
         </div>
 
-        <div>
+        <div class="menu">
+            <div class="menucontent">
             <ul id="menu">
                 <li><a href="">game1</a></li>
                 <li><a href="">game2</a></li>
                 <li><a href="">game3</a></li>
                 <li><a href="">game4</a></li>
+                
                 </ul>
+            </div>
         </div>
-        <div>
-        <footer id="footer">
-            <p class="fp">You can view these page</p>
+        <div class="footer">
+            <p id="fp">You can view these page of mine</p>
             <ul class="icons">
                 <li class="il"><a href="#" >Twitter</a></li>
                 <li class="il"><a href="#" >Facebook</a></li>
                 <li class="il"><a href="#" >Steam</a></li>
                 <li class="il"><a href="#" >Email</a></li>
             </ul>
-            
-        </footer>
     </div>
     </body>
 </html>

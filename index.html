@@ -47,7 +47,7 @@
         }
         #menu { 
         font:12px verdana, arial, sans-serif;
-        
+        overflow: hidden;
         }
 
         #menu, #menu li {
@@ -56,8 +56,8 @@
         margin:0; 
         }
 
-        #menu li a:hover {
-        background:#146C9C; 
+        #menu li button:hover {
+        background:rgb(90, 107, 116); 
         color:#fff; 
         }
         
@@ -65,17 +65,18 @@
         float:left;
         }
         
-        #menu li a {
-            display:block; 
+        #menu li button  {
+            display:block;
             width:100px; 
             height:30px; 
             line-height:30px; 
             text-align:center; 
             background:rgb(49, 61, 70); 
             color:#fff; 
-            text-decoration:none; 
-            border-right:1px solid rgb(122, 119, 119); 
-        }
+            border-top: none;
+            border-bottom: none;
+            cursor: pointer;
+            }
         
         .menucontent{
             background-color:rgb(49, 61, 70);  
@@ -140,8 +141,23 @@
             margin: 0 auto;
             
         }
+
+        .content{
+            display:none;
+            font-size: larger;
+            color:azure;
+            font-family:'Calibri';
+            padding-left:20%;
+            padding-right:20%;
+            
+        }
+        h3{
+            text-align: center;
+        }
+      
 		
         </style>
+        
     </header>
     <body>
         <div class="titlebar">
@@ -161,13 +177,29 @@
         <div class="menu">
             <div class="menucontent">
             <ul id="menu">
-                <li><a href="">game1</a></li>
-                <li><a href="">game2</a></li>
-                <li><a href="">game3</a></li>
-                <li><a href="">game4</a></li>
+                <li><button class="menu12" onclick="menuview(event, 'game1')" id="showfirst">Zelda</button>></li>
+                <li><button class="menu12" onclick="menuview(event, 'game2')">game2</button>></li>
+                <li><button class="menu12" onclick="menuview(event, 'game3')">game3</button>></li>
+                <li><button class="menu12" onclick="menuview(event, 'game4')">game4</button>></li>
                 
                 </ul>
             </div>
+            <div id="game1" class="content">
+                <h3>Zelda</h3>
+                <p>fdasfsafsfadsafdsafdsafds</p>
+              </div>
+              <div id="game2" class="content">
+                <h3>game2</h3>
+                <p>fdasfsafsfadsafdsafdsafds</p>
+              </div>
+              <div id="game3" class="content">
+                <h3>game3</h3>
+                <p>fdasfsafsfadsafdsafdsafds</p>
+              </div>
+              <div id="game4" class="content">
+                <h3>game4</h3>
+                <p>fdasfsafsfadsafdsafdsafds</p>
+              </div>
         </div>
         <div class="footer">
             <p id="fp">You can view these page of mine</p>
@@ -179,4 +211,21 @@
             </ul>
     </div>
     </body>
+    <script>
+            
+        function menuview(evt,gamename){
+            var i, content, menu12;
+            content=document.getElementsByClassName("content");
+            for(i=0;i<content.length;i++){
+                content[i].style.display="none";
+            }
+            menu12=document.getElementsByClassName("menu12");
+            for(i=0;i<menu12.length;i++){
+                menu12[i].className = menu12[i].className.replace(" active", "");
+            }
+            document.getElementById(gamename).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("showfirst").click();
+    </script>
 </html>

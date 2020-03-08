@@ -1,284 +1,24 @@
 <html>
     <header>
         <title>Song's video games</title>
-        <link rel="stylesheet" type="text/css">
-        <style type="text/css">
-
-        html, body,h1, h2, p, a, ul, li, label,
-        article, footer, header, menu, nav, section, pre{
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font-size: 100%;
-                font: inherit;
-                vertical-align: baseline;
-        }
-        
-        .toolbar{
-            background-color: #1d242a;
-            position:fixed;
-            width:100%;
-            
-        }
-
-        .toolbar h1{
-            float:left;
-        }
-
-        
-
-        .toolbar a{
-            float: right;
-        }
-
-        body {
-		background: #2e3842;
-	}
-
-        .toolbar a{
-            text-decoration: none;
-            color:#fff
-        }
-
-        h1{
-            color: #fff;
-            font-weight: 800;
-            letter-spacing: 4px;
-            line-height: 14px;
-            margin: 0 0 15 0;
-            text-transform: uppercase;
-            padding:10px;
-        }
-
-
-        .menu{
-            width:auto;
-            height:80%;
-            background-color:rgb(49, 61, 70);
-        }
-        #menu { 
-        font:12px verdana, arial, sans-serif;
-        overflow: hidden;
-        }
-
-        #menu, #menu li {
-        list-style:none;
-        padding:0; 
-        margin:0; 
-        }
-
-        #menu li button:hover {
-        background:rgb(90, 107, 116); 
-        color:#fff; 
-        }
-        
-        #menu li { 
-        float:left;
-        }
-        
-        #menu li button  {
-            display:block;
-            width:160px; 
-            height:40px; 
-            line-height:30px; 
-            text-align:center; 
-            background:rgb(49, 61, 70); 
-            color:#fff; 
-            border-top: none;
-            border-bottom: none;
-            border-left: none;
-            cursor: pointer;
-            
-            }
-        
-        .menucontent{
-            background-color:rgb(49, 61, 70);  
-            height:40px;
-            border-top:1px solid #fff;
-            border-bottom:1px solid #fff ;
-        }
-
-        .f1{
-        position: fixed; bottom:0;width:100%}
-
-        .footer {
-           
-            background-color: #1d242a;
-            text-align: center;
-            height:10%;   
-        }
-
-		.footer .icons {
-			font-size: 22px;
-		}
-        .il{
-            display: inline;
-        }
-     
-		.footer .icons a,#fp {
-			color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-            
-		}
-
-       
-
-		.footer .icons a:hover {
-			color: #fff;
-		}
-
-        
-        
-        .scroll{
-            padding-top: 90px;
-            padding-bottom: 90px;
-            text-align: center;
-            
-        }
-     
-
-        .scrinner{
-            margin: 10px;
-            
-        }
-        
-        .text1{
-            
-            margin-right:65% ;
-            font-size: larger;
-            text-transform: uppercase;
-            color:#fff; 
-            padding:10px;
-        }
-        img{
-            width:50%;
-            
-            margin: 0 auto;
-            
-        }
-
-        .content{
-            font-size: larger;
-            color:azure;
-            font-family:'Calibri';
-            background-color: rgb(54, 52, 52);
-            height:100%;
-            min-height: 500px;
-            padding-bottom: 1%;
-            
-        }
-        .gamepic{
-           min-width: 500px;
-           min-height: 500px;
-           width: 48%;
-        
-        }
-
-        .gametext{
-            padding-top: 5%;
-            padding-left: 10%;
-            padding-right:10%;
-                    
-        }
-        
-        .gametext a:hover{
-            color: azure;
-        }
-
-        .gametext a{
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none;
-        }
-        .gametext i{
-            font-size:x-large;
-        }
-
-        .gametext pre{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        h3{
-            text-align: center;
-        }
-
-        .content img{
-            width:100%;
-        }
-
-        #game2 img{
-            max-height: 690px;
-        }
-
-        .flex-container {
-        display: flex;
-        justify-content:flex-start;
-        width: 100%;
-        align-items: stretch;
-        }
-
-
-        .dropdown-content2 {
-            display: none;
-            position: absolute;
-            background-color: #2e3842;
-            min-width: 160px;
-            text-align:center;
-        }
-
-        .dropbtn {
-        background-color: #1d242a;;
-        color: white;
-        padding:16px;
-        font-size: 16px;
-        border:none;
-        
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-            float: right;
-        }
-
-        .dropdown-content2 a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        }
-
-        
-
-        .dropdown:hover .dropdown-content2 {
-            display: block;
-        }
-
-        
-
-        .dropdown-content2 a:hover {background-color: #778899}
-
-        .dropdown:hover .dropbtn {
-            background-color: #2e3842;
-        }
-        
-        
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/xsstyle.css">
         
     </header>
     <body>
-        <div class="titlebar">
-          <div class="toolbar">
-          <h1><a  href="javascript:scroll(0,0);">Song's game recomendaiton</a></h1>
-          <div class="dropdown">
-            <button class="dropbtn">The Toolbar here!</button> 
-            <div class="dropdown-content2">
-                <a href="#" target="_blank">Sekiro</a>
-                <a href="#" target="_blank">Zelda</a>
-                <a href="#" target="_blank">part 3</a>
-                <a href="#" target="_blank">part 4</a>
-            </div>
-          </div>  
-        </div>
+        <div class="out">
+            <div class="toolbar">
+                <h1><a  href="javascript:scroll(0,0);">Song's game recomendaiton</a></h1>
+                <div class="dropdown">
+                  <button class="dropbtn">The Toolbar here!</button> 
+                  <div class="dropdown-content2">
+                      <a href="#" target="_blank">Sekiro</a>
+                      <a href="#" target="_blank">Zelda</a>
+                      <a href="#" target="_blank">Dark Soul</a>
+                      <a href="#" target="_blank">Monster Hunter</a>
+                  </div>
+                </div> 
+              </div>
+      
         <div class="scroll" >
             <div class="text1">
                 <a onclick="window.scrollTo(0,0);">Recommended games</a>
@@ -290,11 +30,11 @@
 
         <div class="menu">
             <div class="menucontent">
-            <ul id="menu">
+            <ul id="menu1">
                 <li><button class="menu12" onclick="menuview(event, 'game1')" id="showfirst">Zelda</button></li>
                 <li><button class="menu12" onclick="menuview(event, 'game2')">Sekiro</button></li>
-                <li><button class="menu12" onclick="menuview(event, 'game3')">game3</button></li>
-                <li><button class="menu12" onclick="menuview(event, 'game4')">game4</button></li>
+                <li><button class="menu12" onclick="menuview(event, 'game3')">Dark Soul</button></li>
+                <li><button class="menu12" onclick="menuview(event, 'game4')">Monster Hunter</button></li>
                 </ul>
             </div>
             <div id="game1" class="content" >
@@ -306,7 +46,7 @@
                 <div class="gametext">
                     <h3>Zelda: Breath of wild</h3>
                 </br></br>
-                    <pre> Breath of the Wild is an action-adventure
+                    <p>&nbsp;&nbsp; Breath of the Wild is an action-adventure
  game set in an open world environment where
  players are tasked with exploring the kingdom 
  of Hyrule while controlling Link. In terms of 
@@ -314,9 +54,11 @@
  gameplay, which is illustrated by the game's lack 
  of defined entrances or exits to areas, scant 
  instruction given to the player, and encouragement 
- to explore freely.</pre>
-                    </br></br>
+ to explore freely.</p>
+                    </br>
                     <i><a href="#">>>Explore more</a></i>
+                    
+                    
                     
                 </div>
                 </div>
@@ -330,16 +72,16 @@
                     <div class="gametext">
                         <h3>Sekiro: Shadow Die Twice</h3>
                     </br></br>
-                        <pre> In Sekiro: Shadows Die Twice you are the 
- “one-armed wolf”, a disgraced and disfigured
+                        <p>&nbsp;&nbsp; In Sekiro: Shadows Die Twice you are the 
+  “one-armed wolf”, a disgraced and disfigured
  warrior rescued from the brink of death. Bound 
  to protect a young lord who is the descendant 
  of an ancient bloodline, you become the target 
  of many vicious enemies, including the dangerous 
  Ashina clan. When the young lord is captured, 
  nothing will stop you on a perilous quest to 
- regain your honor, not even death itself.</pre>
-                        </br></br>
+ regain your honor, not even death itself.</p>
+                        </br>
                         <i><a href="#">>>Explore more</a></i>
                         
                     </div>
@@ -353,6 +95,9 @@
                 <h3>game4</h3>
                 <p>fdasfsafsfadsafdsafdsafds</p>
               </div>
+              <div class="menucontent">
+               
+              </div>
         </div>
         <div class="f1">
         <div class="footer">
@@ -365,6 +110,7 @@
                 <li class="il"><a href="#" >Email</a></li>
             </ul>
     </div></div>
+</div>
     </body>
     <script>
 

@@ -1,0 +1,306 @@
+html, body,h1, h2, p, a, ul, li, label,
+article, footer, header, menu, nav, section, pre{
+                font: inherit;
+                vertical-align: baseline;
+                
+                
+        }
+
+        *{
+                margin: 0;
+                padding: 0;
+                border: 0;
+        }
+       
+
+        .out{
+            width:100%;
+            
+        }
+        
+        .toolbar{
+            background-color: #1d242a;
+            position: fixed;
+            width:100%;
+            
+        }
+
+        .toolbar h1{
+            float:left;
+        }
+
+        body {
+        background: #2e3842;
+        
+	}
+
+        .toolbar a{
+            text-decoration: none;
+            color:#fff
+        }
+
+        h1{
+            color: #fff;
+            font-weight: 800;
+            letter-spacing: 4px;
+            line-height: 14px;
+            margin: 0 0 15 0;
+            text-transform: uppercase;
+            padding:10px;
+        }
+
+
+        .menu{
+            width:100%;
+            padding-bottom: 5%;
+            background-color:rgb(49, 61, 70);
+        }
+        #menu1 { 
+        font:12px verdana, arial, sans-serif;
+        overflow: hidden;
+        }
+
+        #menu1, #menu1 li {
+        list-style:none;
+        padding:0; 
+        margin:0; 
+        }
+
+        #menu1 li button:hover {
+        background:rgb(90, 107, 116); 
+        color:#fff; 
+        }
+        
+        #menu1 li { 
+        float:left;
+        }
+        
+        #menu1 li button  {
+            display:block;
+            width:160px; 
+            height:40px; 
+            line-height:30px; 
+            text-align:center; 
+            background:rgb(49, 61, 70); 
+            color:#fff; 
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            cursor: pointer;   
+            }
+        
+        .menucontent{
+            background-color:rgb(49, 61, 70);  
+            height:40px;
+            border-top:1px solid #fff;
+            border-bottom:1px solid #fff ;
+        }
+
+
+        .f1{
+            position: fixed;
+            bottom:0;
+            width:100%}
+
+        .footer {
+           
+            background-color: #1d242a;
+            text-align: center;
+            height:10%;   
+        }
+
+		.footer .icons {
+			font-size: 22px;
+		}
+        .il{
+            display: inline;
+        }
+     
+		.footer .icons a,#fp {
+			color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            
+		}
+
+       
+
+		.footer .icons a:hover {
+			color: #fff;
+		}
+
+        
+        
+        .scroll{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            text-align: center;
+            width:100%;
+            
+        }
+     
+
+        .scrinner{
+            margin: 10px;
+            
+        }
+        
+        .text1{
+            
+            margin-right:65% ;
+            font-size: larger;
+            text-transform: uppercase;
+            color:#fff; 
+            padding:10px;
+        }
+        img{
+            width:50%;
+            
+            
+        }
+
+        .content{
+            font-size: x-large;
+            color:azure;
+            font-family:'Calibri';
+            background-color: rgb(54, 52, 52);
+            height:75%;
+            min-height: 500px; 
+        }
+
+        #game2 img{
+            max-height: 660px;
+        }
+
+        .gamepic{
+           min-height: 500px;
+           min-width: 500px;
+           
+           width: 48%;
+           height: 60%;
+        
+        }
+
+        .gametext{
+            width: 50%;
+            height:60%;
+            text-align: left;
+            padding-left: 5px;           
+        }
+
+        @media screen and (max-width: 980px){
+            .flex-container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                
+                height: 100%;
+                }
+            .gametext{
+                width: 100%;
+                
+                padding-top: 5%;
+            }
+            .gamepic{
+                width:100%;
+                min-height: 700px;
+            }
+            body{
+                height:100%;
+            }
+
+            .content{
+                font-size: x-large;
+                color:azure;
+                font-family:'Calibri';
+                background-color: rgb(54, 52, 52);
+                height:90%;
+                min-height: 500px; 
+            }
+        }
+        
+        .gametext p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+            
+        }
+       
+        
+        .gametext a:hover{
+            color: azure;
+        }
+
+        .gametext a{
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+        }
+        .gametext i{
+            font-size:x-large;
+        }
+
+        
+
+        h3{
+            text-align: center;
+        }
+
+        .content img{
+            width:100%;
+        }
+
+       
+        .flex-container {
+        display: flex;
+        justify-content:flex-start;
+        width: 100%;
+        align-items: stretch;
+        height: 100%;
+        }
+
+
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #2e3842;
+            min-width: 160px;
+            text-align:center;
+        }
+
+        .dropbtn {
+        background-color: #1d242a;;
+        color: white;
+        padding:16px;
+        font-size: 16px;
+        border:none;
+        
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            float: right;
+        }
+
+        .dropdown-content2 a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        
+
+        .dropdown:hover .dropdown-content2 {
+            display: block;
+        }
+
+        
+
+        .dropdown-content2 a:hover {background-color: #778899}
+
+        .dropdown:hover .dropbtn {
+            background-color: #2e3842;
+        }

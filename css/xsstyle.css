@@ -22,6 +22,7 @@ article, footer, header, menu, nav, section, pre{
             background-color: #1d242a;
             position: fixed;
             width:100%;
+            box-shadow:5px 5px 5px black;
             
         }
 
@@ -130,7 +131,7 @@ article, footer, header, menu, nav, section, pre{
 
         
         
-        .scroll{
+        .scroll, #one{
             padding-top: 5%;
             padding-bottom: 5%;
             text-align: center;
@@ -153,9 +154,8 @@ article, footer, header, menu, nav, section, pre{
             padding:10px;
         }
         img{
-            width:50%;
-            
-            
+            width:60%;
+
         }
 
         .content{
@@ -177,6 +177,7 @@ article, footer, header, menu, nav, section, pre{
            
            width: 48%;
            height: 60%;
+           
         
         }
 
@@ -217,6 +218,17 @@ article, footer, header, menu, nav, section, pre{
                 height:90%;
                 min-height: 500px; 
             }
+
+            img{
+                width:80%;
+            }
+
+            #menu1{
+                display: flex;
+                justify-content: space-between;
+            }
+
+
         }
         
         .gametext p{
@@ -280,8 +292,8 @@ article, footer, header, menu, nav, section, pre{
 
         .dropdown {
             position: relative;
-            display: inline-block;
-            float: right;
+            display: block;
+            float:right;
         }
 
         .dropdown-content2 a {
@@ -303,4 +315,154 @@ article, footer, header, menu, nav, section, pre{
 
         .dropdown:hover .dropbtn {
             background-color: #2e3842;
+        }
+
+        .pre, .next{
+            cursor: pointer;
+            position: relative;
+            bottom:250px;
+            font-size: 20px;
+            color:azure;
+            font-weight: bold;
+        }
+
+        #overlay{
+            width:100%;
+            height:100%;
+            margin:0;
+            padding:0;
+            background-color:rgba(0, 0, 0, 0.5);
+            z-index:2;
+            display:none;
+            position: fixed;
+        }
+
+        #overlay > h1{
+            color: #fff;
+            font-weight: 800;
+            letter-spacing: 4px;
+            line-height: 14px;
+            margin: 0 0 15 0;
+            text-transform: uppercase;
+            padding:10px;
+            text-align: center;
+        }
+
+
+
+        .row1  {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            display: flex;
+        }
+    
+            .row1 .image {
+                border-radius: 0;
+                width: 40%;
+            }
+
+    
+                .row1 .image img {
+                    border-radius: 0;
+                    width: 100%;
+                }
+
+    
+            .row1 .content {
+                width: 60%;
+            }
+
+            .row2  {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                display: flex;
+            }
+        
+                .row2 .image {
+                    border-radius: 0;
+                    width: 40%;
+                }
+                    .row2 .image img {
+                        border-radius: 0;
+                        width: 100%;
+                    }
+    
+                .row2 .content {
+                    width: 60%;
+                }
+
+            
+           
+            
+
+            @media screen and (max-width: 980px) {
+
+                .row1 {
+                    display: block;
+                }
+
+                .row2 {
+                    display: block;
+                }
+    
+    
+                    .row1 .image {
+                        width: 100%;
+                    }
+
+                    .row2 .image {
+                        width: 100%;
+                    }
+    
+                    .row1 .content {
+                        
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    .row2 .content {
+                        
+                        text-align: center;
+                        width: 100%;
+                    }
+            }
+
+           
+            iframe{
+                height:720px;
+                width:1280px;
+                
+            }
+
+            @media screen and (max-width: 1280px){
+                iframe{
+                    height:600px;
+                    width:1066px;
+                    
+                }
+            }
+            @media screen and (max-width: 1066px){
+                iframe{
+                    height:500px;
+                    width:888px; 
+                }
+
+            @media screen and (max-width: 888px){
+                iframe{
+                    height:400px;
+                    width:711px; 
+                }
+
+            }
+        }
+
+        .effect {
+            animation: fadeEffect 3s; 
+        }   
+
+        @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
         }

@@ -2,19 +2,29 @@
     <header>
         <title>Song's video games</title>
         <link rel="stylesheet" type="text/css" href="css/xsstyle.css">
-        
+        <meta charset="UTF-8">
     </header>
     <body>
+        <div id="overlay" onclick="off()">
+        <h1>
+        </br></br></br></br></br></br></br></br>Welcome!</br></br></br></br></br>This is the website of game recommendation 
+        </br></br></br></br>from Chinese students in UW Eau Claire!</h1>
+        <h1>We discuss and choose some best games we like for you</h1>
+        </br><h1>Hope you enjoy them.</h1>
+    </br></br></br></br></br><p style="color: rgb(255, 255, 255); text-align: center;">......click to close......</p>
+        </div>
         <div class="out">
             <div class="toolbar">
-                <h1><a  href="javascript:scroll(0,0);">Song's game recomendaiton</a></h1>
+                <h1 style="font-size: 15px;"><a  href="javascript:scroll(0,0);">Song's game recomendaiton</a></h1>
                 <div class="dropdown">
                   <button class="dropbtn">The Toolbar here!</button> 
                   <div class="dropdown-content2">
                       <a href="#" target="_blank">Sekiro</a>
                       <a href="#" target="_blank">Zelda</a>
-                      <a href="#" target="_blank">Dark Soul</a>
+                      <a href="darksoul3.html" target="_blank">Dark Soul</a>
                       <a href="#" target="_blank">Monster Hunter</a>
+                      <a href="#" target="_blank">Comments</a>
+                      <a href="#" target="_blank">Introduction</a>
                   </div>
                 </div> 
               </div>
@@ -23,8 +33,10 @@
             <div class="text1">
                 <a onclick="window.scrollTo(0,0);">Recommended games</a>
             </div>
-            <div class="scrinner"><a href="https://www.zelda.com/" target="blank">
-            <img src="images//30f99676956da2452efbfd3677623b62712137c2.jpg"></a>
+            <div class="scrinner">
+                <a class="pre" onclick="pre()" id="autochange" >&lt;&lt;</a><a href="https://www.zelda.com/" target="_blank" id="link1">
+                <img id="showpic" src="images//1.jpg"></a>
+                <a class="next" onclick="next()">&gt;&gt;</a>
             </div>
         </div>
 
@@ -88,12 +100,49 @@
                     </div>
               </div>
               <div id="game3" class="content">
-                <h3>game3</h3>
-                <p>fdasfsafsfadsafdsafdsafds</p>
+                <div class="flex-container">
+                    <div class="gamepic">
+                    <img src="images/DS2.jpg">
+                    </div>
+                    
+                    <div class="gametext">
+                        <h3>Dark Soul III</h3>
+                    </br></br>
+                        <p>&nbsp;&nbsp; In Dark Souls III the player 
+                            controls a character from a third-person perspective through 
+                            the dark fantasy world of Lothric.  The gameplay is similar to 
+                            other entries in the series, players are equipped with a variety 
+                            of weapons, items, and magic to battle against enemies.  
+                            Similarities to other titles in the series, such as Bonfires, 
+                            which serve as progress-saving "checkpoints", and Estus Flasks, 
+                            which serve as health and magic/skill replenishing itmes return. 
+                            New gameplay elements include the return of the magic meter from 
+                            Demon's Souls, and a new combat system, giving player's additional 
+                            weapon-specific skills that provide power-ups or deliver powerful special attacks.</p>
+                        </br>
+                        <i><a href="darksoul3.html">>>Explore more</a></i>
+                        
+                    </div>
+                    </div>
               </div>
               <div id="game4" class="content">
-                <h3>game4</h3>
-                <p>fdasfsafsfadsafdsafdsafds</p>
+                <div class="flex-container">
+                    <div class="gamepic">
+                    <img src="images/mhw.jpg">
+                    </div>
+                    
+                    <div class="gametext">
+                        <h3>Monster Hunter World</h3>
+                    </br></br>
+                        <p>&nbsp;&nbsp;Battle gigantic monsters in epic locales.
+                            In the Monster Hunter World, as a hunter, you'll take on quests to hunt monsters in a variety of habitats.
+                            Take down these monsters and receive materials that you can use to 
+                            create stronger weapons and armor in order to hunt even more dangerous monsters.</p>
+                        </br>
+                        <i><a href="#">>>Explore more</a></i>
+                        
+                    </div>
+                    </div>
               </div>
               <div class="menucontent">
                
@@ -129,5 +178,82 @@
             evt.currentTarget.className += " active";
         }
         document.getElementById("showfirst").click();
+
+        var imgs=["images//1.jpg","images//2.jpg","images//3.jpg","images//4.jpg"];
+        var links=["https://www.zelda.com/","https://store.steampowered.com/agecheck/app/374320/#","http://www.monsterhunterworld.com/us/","https://www.sekirothegame.com/"];
+        var i=0,j=0;
+        function pre(){
+            var show=document.getElementById("showpic");
+            var link=document.getElementById("link1");
+            removeclass();
+            setTimeout(function(){
+                addclass();
+            }, 1500);
+            i=i-1;
+            if(i<0){
+                i=3;
+            }
+            show.src=imgs[i];
+            link1.href=links[i];
+        }
+        function next(){
+            var show=document.getElementById("showpic");
+            var link=document.getElementById("link1");
+            removeclass();
+            setTimeout(function(){
+                addclass();
+            }, 1500);
+
+            i=i+1;
+            if(i>=4){
+                i=0;
+            }
+            show.src=imgs[i];
+            link1.href=links[i];    
+        }
+        window.setInterval(next,6000);
+
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+             document.getElementById("overlay").style.display = "none";
+        }
+        function show(){
+            document.getElementById("showpic").style.display="block";
+        }
+        window.onload=on;
+
+        function addclass() {
+            var element = document.getElementById("showpic");
+            element.classList.remove("effect");
+        }
+
+        function removeclass() {
+            var element = document.getElementById("showpic");
+            element.classList.add("effect");
+        }
+		/*function addClass(current,newclass) {
+		    var oldClass = current.className;
+		    var blank = oldClass != ''?' ':'';
+            var newClass = oldClass + blank + newclass;
+            current.className = newClass;    
+		}
+
+		function removeClass(current,newclass) {
+		    var classNames = current.className.split(/\s+/);
+		    current.className = classNames.filter(function(item){
+		        return item !== newclass;
+			}).join(' ');
+		}
+        var new1 = document.getElementById('showpic');
+        */
+
+
+        
+		
+		
+		 
     </script>
 </html>

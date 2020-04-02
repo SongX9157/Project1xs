@@ -23,7 +23,7 @@ article, footer, header, menu, nav, section, pre{
             position: fixed;
             width:100%;
             box-shadow:5px 5px 5px black;
-            
+            z-index: 2;
         }
 
         .toolbar h1{
@@ -97,6 +97,16 @@ article, footer, header, menu, nav, section, pre{
             border-bottom:1px solid #fff ;
         }
 
+        .menucontent2{
+            background-color:rgb(49, 61, 70);  
+            height:40px;
+            width:100%;
+            border-top:1px solid #fff;
+            border-bottom:1px solid #fff ;
+            bottom:60px;
+            
+        }
+
 
         .f1{
             position: fixed;
@@ -146,12 +156,14 @@ article, footer, header, menu, nav, section, pre{
         }
         
         .text1{
-            
+            white-space: nowrap;
             margin-right:65% ;
             font-size: larger;
             text-transform: uppercase;
             color:#fff; 
-            padding:10px;
+            padding-top:40px;
+            padding-bottom: 5px;
+            margin-top: 5px;
         }
         img{
             width:60%;
@@ -163,8 +175,7 @@ article, footer, header, menu, nav, section, pre{
             color:azure;
             font-family:'Calibri';
             background-color: rgb(54, 52, 52);
-            height:75%;
-            min-height: 500px; 
+            
         }
 
         #game2 img{
@@ -172,7 +183,7 @@ article, footer, header, menu, nav, section, pre{
         }
 
         .gamepic{
-           min-height: 500px;
+           
            min-width: 500px;
            
            width: 48%;
@@ -188,48 +199,6 @@ article, footer, header, menu, nav, section, pre{
             padding-left: 5px;           
         }
 
-        @media screen and (max-width: 980px){
-            .flex-container {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                width: 100%;
-                
-                height: 100%;
-                }
-            .gametext{
-                width: 100%;
-                
-                padding-top: 5%;
-            }
-            .gamepic{
-                width:100%;
-                min-height: 700px;
-            }
-            body{
-                height:100%;
-            }
-
-            .content{
-                font-size: x-large;
-                color:azure;
-                font-family:'Calibri';
-                background-color: rgb(54, 52, 52);
-                height:90%;
-                min-height: 500px; 
-            }
-
-            img{
-                width:80%;
-            }
-
-            #menu1{
-                display: flex;
-                justify-content: space-between;
-            }
-
-
-        }
         
         .gametext p{
             overflow: hidden;
@@ -269,7 +238,7 @@ article, footer, header, menu, nav, section, pre{
         justify-content:flex-start;
         width: 100%;
         align-items: stretch;
-        height: 100%;
+        
         }
 
 
@@ -287,8 +256,17 @@ article, footer, header, menu, nav, section, pre{
         padding:16px;
         font-size: 16px;
         border:none;
-        
         }
+
+        .dropbtn2 {
+            background-color: #1d242a;;
+            color: white;
+            padding:16px;
+            font-size: 16px;
+            border:none;
+            display: none;
+            
+            }
 
         .dropdown {
             position: relative;
@@ -296,11 +274,13 @@ article, footer, header, menu, nav, section, pre{
             float:right;
         }
 
+
         .dropdown-content2 a {
         color: white;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        
         }
 
         
@@ -311,20 +291,14 @@ article, footer, header, menu, nav, section, pre{
 
         
 
-        .dropdown-content2 a:hover {background-color: #778899}
+        .dropdown-content2 a:hover {background-color: #778899;}
 
         .dropdown:hover .dropbtn {
             background-color: #2e3842;
+            
         }
 
-        .pre, .next{
-            cursor: pointer;
-            position: relative;
-            bottom:250px;
-            font-size: 20px;
-            color:azure;
-            font-weight: bold;
-        }
+        
 
         #overlay{
             width:100%;
@@ -393,12 +367,69 @@ article, footer, header, menu, nav, section, pre{
                     width: 60%;
                 }
 
+            /*the pointer of the picture animation*/    
+            .pre, .next{
+                    cursor: pointer;
+                    position: relative;
+                    font-size: 33px;
+                    color:azure;
+                    font-weight: bold;
+                    text-align: center;
+            }
+                
+            .pointer1{
+                float:left;
+                padding-top:8%;
+                padding-bottom: 10%;
+            }
+            .pointer2{
+                float: right;
+                padding-top:8%;
+                padding-bottom: 10%;
+            }
             
            
             
 
-            @media screen and (max-width: 980px) {
+            @media screen and  (max-width: 980px) {
 
+
+                .flex-container {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    }
+
+                .gametext{
+                    width: 100%;
+                    padding-top:0px;
+                    padding-top: 5%;
+                }
+                .gamepic{
+                    width:100%;
+                }
+                body{
+                    height:100%;
+                }
+    
+                .content{
+                    font-size: x-large;
+                    color:azure;
+                    font-family:'Calibri';
+                    background-color: rgb(54, 52, 52);
+                    
+                    min-height: 500px; 
+                }
+    
+                img{
+                    width:80%;
+                }
+    
+                #menu1{
+                    display: flex;
+                    justify-content: space-between;
+                }
                 .row1 {
                     display: block;
                 }
@@ -427,9 +458,94 @@ article, footer, header, menu, nav, section, pre{
                         text-align: center;
                         width: 100%;
                     }
+
+                    .dropbtn{
+                        display: none;
+                    }
+
+                    .dropbtn2{
+                        display: block;
+                    }
+
+                    .dropdown-content2{
+                        height: 100%; 
+                        position: fixed; 
+                        z-index: 1; 
+                        top: 0;
+                        right: 0;
+                        overflow-x: hidden; 
+                        padding-top: 60px; 
+                        transition: 0.5s;
+                    }
+
+                    
             }
 
-           
+            @media screen and  (max-width: 660px){
+                #menu1 li button  {
+                    display:block;
+                    width:100px; 
+                    height:40px; 
+                    line-height:30px; 
+                    text-align:center; 
+                    background:rgb(49, 61, 70); 
+                    color:#fff; 
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: none;
+                    cursor: pointer;   
+                    }
+
+                    .pre, .next{
+                        cursor: pointer;
+                        position: relative;
+                        font-size: 20px;
+                        color:azure;
+                        font-weight: bold;
+                        text-align: center;
+                        
+                        
+                }
+
+                .pointer1{
+                    float:left;
+                    padding-top:6%;
+                    padding-bottom: 10%;
+                    z-index: -1;
+                    
+                }
+                .pointer2{
+                    float: right;
+                    padding-top:6%;
+                    padding-bottom: 10%;
+                    
+                }
+    
+            }
+
+            @media screen and (max-width: 510px){
+                #menu1 li button  {
+                    display:block;
+                    width:90px; 
+                    height:40px; 
+                    line-height:50px;
+                    text-align:center; 
+                    background:rgb(49, 61, 70); 
+                    color:#fff; 
+                    border-top: none;
+                    border-bottom: none;
+                    border-left: none;
+                    cursor: pointer;   
+                    }
+
+                .gamepic{
+                    min-width:300px;
+                }
+            }
+
+            
+
+           /*page2 game*/
             iframe{
                 height:720px;
                 width:1280px;

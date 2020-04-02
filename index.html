@@ -1,9 +1,10 @@
 <html>
-    <header>
+    <head>
         <title>Song's video games</title>
         <link rel="stylesheet" type="text/css" href="css/xsstyle.css">
-        <meta charset="UTF-8">
-    </header>
+        <link rel="icon" href="images//favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    </head>
     <body>
         <div id="overlay" onclick="off()">
         <h1>
@@ -15,10 +16,16 @@
         </div>
         <div class="out">
             <div class="toolbar">
-                <h1 style="font-size: 15px;"><a  href="javascript:scroll(0,0);">Song's game recomendaiton</a></h1>
+                <h1 style="font-size: 15px; padding-top: 20px;"><a  href="javascript:scroll(0,0);">Video Games</a></h1>
                 <div class="dropdown">
-                  <button class="dropbtn">The Toolbar here!</button> 
+                  <button class="dropbtn">The Toolbar here!</button>
+                  <button class="dropbtn2"><svg viewBox="0 0 100 80" width="30" height="30">
+                    <rect fill="white" width="100" height="10"></rect>
+                    <rect fill="white" y="30" width="100" height="10"></rect>
+                    <rect fill="white" y="60" width="100" height="10"></rect>
+                  </svg></button> 
                   <div class="dropdown-content2">
+                     <a href="index.html" target="_blank">Overview</a>
                       <a href="#" target="_blank">Sekiro</a>
                       <a href="#" target="_blank">Zelda</a>
                       <a href="darksoul3.html" target="_blank">Dark Soul</a>
@@ -34,9 +41,13 @@
                 <a onclick="window.scrollTo(0,0);">Recommended games</a>
             </div>
             <div class="scrinner">
-                <a class="pre" onclick="pre()" id="autochange" >&lt;&lt;</a><a href="https://www.zelda.com/" target="_blank" id="link1">
+                <div class="pointer1">
+                <a class="pre" onclick="pre()" id="autochange" ></br></br>&lt;&lt;</a><a href="https://www.zelda.com/" target="_blank" id="link1">
+                </div>
                 <img id="showpic" src="images//1.jpg"></a>
-                <a class="next" onclick="next()">&gt;&gt;</a>
+                <div class="pointer2">
+                <a class="next" onclick="next()"></br></br>&gt;&gt;</a>
+                </div>
             </div>
         </div>
 
@@ -78,7 +89,7 @@
               <div id="game2" class="content">
                 <div class="flex-container">
                     <div class="gamepic">
-                    <img src="images//Sekiro-Shadows-Die-Twice.png">
+                    <img src="images//sekiro.jpg">
                     </div>
                     
                     <div class="gametext">
@@ -144,8 +155,7 @@
                     </div>
                     </div>
               </div>
-              <div class="menucontent">
-               
+              <div class="menucontent2">
               </div>
         </div>
         <div class="f1">

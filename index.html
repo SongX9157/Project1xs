@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Song's video games</title>
+        <title>Game Club</title>
         <link rel="stylesheet" type="text/css" href="css/xsstyle.css">
         <link rel="icon" href="images//favicon.ico" type="image/x-icon">
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -26,12 +26,11 @@
                   </svg></button> 
                   <div class="dropdown-content2">
                      <a href="index.html" target="_blank">Overview</a>
-                      <a href="#" target="_blank">Sekiro</a>
+                      <a href="sekiro.html" target="_blank">Sekiro</a>
                       <a href="#" target="_blank">Zelda</a>
                       <a href="darksoul3.html" target="_blank">Dark Soul</a>
                       <a href="#" target="_blank">Monster Hunter</a>
-                      <a href="#" target="_blank">Comments</a>
-                      <a href="#" target="_blank">Introduction</a>
+                      <a href="introduction.html" target="_blank">Introduction</a>
                   </div>
                 </div> 
               </div>
@@ -42,8 +41,9 @@
             </div>
             <div class="scrinner">
                 <div class="pointer1">
-                <a class="pre" onclick="pre()" id="autochange" ></br></br>&lt;&lt;</a><a href="https://www.zelda.com/" target="_blank" id="link1">
-                </div>
+                <a class="pre" onclick="pre()" id="autochange" ></br></br>&lt;&lt;</a></div>
+                <a id="link1" href="https://www.zelda.com/" target="_blank" >
+                
                 <img id="showpic" src="images//1.jpg"></a>
                 <div class="pointer2">
                 <a class="next" onclick="next()"></br></br>&gt;&gt;</a>
@@ -160,7 +160,7 @@
         </div>
         <div class="f1">
         <div class="footer">
-            <p id="fp">You can view these page of mine</p>
+            <p id="fp">You can view these page of us</p>
             
             <ul class="icons">
                 <li class="il"><a href="#" >Twitter</a></li>
@@ -204,7 +204,7 @@
                 i=3;
             }
             show.src=imgs[i];
-            link1.href=links[i];
+            link.href=links[i];
         }
         function next(){
             var show=document.getElementById("showpic");
@@ -219,7 +219,7 @@
                 i=0;
             }
             show.src=imgs[i];
-            link1.href=links[i];    
+            link.href=links[i];    
         }
         window.setInterval(next,6000);
 

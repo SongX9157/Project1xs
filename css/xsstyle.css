@@ -1,9 +1,6 @@
-html, body,h1, h2, p, a, ul, li, label,
-article, footer, header, menu, nav, section, pre{
+html, body,h1, h2, p, a, ul, li,footer, header, menu, nav, section, pre{
                 font: inherit;
-                vertical-align: baseline;
-                
-                
+                vertical-align: baseline;      
         }
 
         *{
@@ -114,10 +111,10 @@ article, footer, header, menu, nav, section, pre{
             width:100%}
 
         .footer {
-           
+        
             background-color: #1d242a;
             text-align: center;
-            height:10%;   
+               
         }
 
 		.footer .icons {
@@ -245,13 +242,13 @@ article, footer, header, menu, nav, section, pre{
         .dropdown-content2 {
             display: none;
             position: absolute;
-            background-color: #2e3842;
+            background-color: #1f252b;
             min-width: 160px;
             text-align:center;
         }
 
         .dropbtn {
-        background-color: #1d242a;;
+        background-color: #1f252b;;
         color: white;
         padding:16px;
         font-size: 16px;
@@ -294,7 +291,7 @@ article, footer, header, menu, nav, section, pre{
         .dropdown-content2 a:hover {background-color: #778899;}
 
         .dropdown:hover .dropbtn {
-            background-color: #2e3842;
+            background-color: #1f252b;
             
         }
 
@@ -328,7 +325,10 @@ article, footer, header, menu, nav, section, pre{
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
-            display: flex;
+            background: rgb(29, 30, 31);
+            border-top:1px solid #fff;
+            border-bottom:1px solid #fff ;
+            
         }
     
             .row1 .image {
@@ -345,6 +345,7 @@ article, footer, header, menu, nav, section, pre{
     
             .row1 .content {
                 width: 60%;
+                height:360px;
             }
 
             .row2  {
@@ -352,6 +353,9 @@ article, footer, header, menu, nav, section, pre{
                 flex-direction: row;
                 align-items: center;
                 display: flex;
+                background: rgb(29, 30, 31);
+                border-top:1px solid #fff;
+                border-bottom:1px solid #fff ;
             }
         
                 .row2 .image {
@@ -365,10 +369,12 @@ article, footer, header, menu, nav, section, pre{
     
                 .row2 .content {
                     width: 60%;
+                    height:360px;
+                    background-color: rgba(82, 81, 78, 0.226);
                 }
 
             /*the pointer of the picture animation*/    
-            .pre, .next{
+            .pre, .next, .pre1,.next1{
                     cursor: pointer;
                     position: relative;
                     font-size: 33px;
@@ -543,14 +549,26 @@ article, footer, header, menu, nav, section, pre{
                 }
             }
 
+            .effect {
+                animation: fadeEffect 3s; 
+            }   
+    
+            @keyframes fadeEffect {
+            from {opacity: 0;}
+            to {opacity: 1;}
+            }
+    
+
             
 
            /*page2 game*/
             iframe{
                 height:720px;
                 width:1280px;
-                
+                margin-top: 50px;
             }
+
+            
 
             @media screen and (max-width: 1280px){
                 iframe{
@@ -564,21 +582,197 @@ article, footer, header, menu, nav, section, pre{
                     height:500px;
                     width:888px; 
                 }
+            }
 
             @media screen and (max-width: 888px){
                 iframe{
                     height:400px;
                     width:711px; 
                 }
+            }
+
+            @media screen and (max-width:660px) {
+                iframe{
+                    height:300px;
+                    width:533px;
+                }
+            }
+
+            @media screen and (max-width:500px) {
+                iframe{
+                    height:168px;
+                    width:300px;
+                }
 
             }
-        }
 
-        .effect {
-            animation: fadeEffect 3s; 
-        }   
+            /*introduction page*/
+            .square{
+                padding-top: 100px;
+                padding-bottom: 100px;
+            }
 
-        @keyframes fadeEffect {
-        from {opacity: 0;}
-        to {opacity: 1;}
-        }
+            .list{
+                display: flex;
+                width:100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                list-style: none;
+            }
+            .list li{
+                border-radius: 1%;
+                display: block;
+                padding:  5% 10% 5% 10%;
+                width:20%;
+                font-family: sans-serif;
+                font-size: large;
+                color:rgb(230, 227, 227);
+                
+            }
+
+            #li1{
+                background-color: rgba(0, 0, 0, 0.17);
+            }
+            #li2{
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+            #li3{
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+            #li4{
+                background-color: rgba(0, 0, 0, 0.17);
+            }
+            #li5{
+                background-color: rgba(0, 0, 0, 0.17);
+            }
+            #li6{
+                background-color: rgba(0, 0, 0, 0.12);
+            }
+            #li6 a{
+                color:gainsboro;
+            }
+
+
+            
+            @media screen and (max-width:980px) {
+                .list li{
+                    width: 50%;
+                }
+
+                #li2{
+                    background-color: rgba(0, 0, 0, 0.17);
+                }
+                #li1{
+                    background-color: rgba(0, 0, 0, 0.12);
+                }
+                #li3{
+                    background-color: rgba(0, 0, 0, 0.12);
+                }
+                #li4{
+                    background-color: rgba(0, 0, 0, 0.17);
+                }
+                #li6{
+                    background-color: rgba(0, 0, 0, 0.17);
+                }
+                #li5{
+                    background-color: rgba(0, 0, 0, 0.12);
+                }
+
+            }
+
+            /*sekiro page*/
+            .tophead{
+                
+                width: 100%;
+                
+            }
+            .headpic{
+                width:100%;
+                padding-top: 5%;
+                padding-bottom:50%;
+                background-color: gray;
+                text-align: center;
+                background-image: url(../images/sk1.jpg);
+                background-size:100% ;
+                background-repeat: no-repeat;
+            }
+
+            .headtext{
+                position: absolute;
+                left:50%;
+                top:15%;
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+                font-size: 40px;
+            }
+            .headpic img{
+                
+                width: 100%;
+            }
+
+            .review{
+                margin: 20px;
+                background-color: rgba(0, 0, 0, 0.274);
+                margin-right: 20px;
+                margin-left: 20px;
+                position: relative;
+            }
+
+            .pre1{
+                position: absolute;
+                bottom:110px;
+            }
+
+            .next1{
+                position: absolute;
+                right:0;
+                bottom:110px;
+            }
+
+            .slide{
+                width:100%;
+                text-align: center;
+                display: none;
+                height:20%;
+                padding-top:10%;
+            }
+
+            .slide p{
+                font-size: 20px;
+                color: aliceblue;
+            }
+
+            .slide q{
+                font-size:50px;
+                color:rgb(143, 122, 16);
+                font-family: fantasy;
+            }
+
+            @media screen and (max-width:980px) {
+                .headtext{
+                    font-size: 20px;
+                }
+            }
+
+            @media screen and (max-width:600px) {
+                .headtext{
+                    font-size: 15px;
+                }
+
+                .slide q{
+                    font-size:25px;
+                }
+
+                .slide p{
+                    font-size: 15px;
+                }
+
+                .pre1{
+                    bottom:100px;
+                }
+
+                .next1{
+                    bottom:100px;
+                }
+            }
+        

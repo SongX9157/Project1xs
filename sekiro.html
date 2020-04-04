@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Game Club</title>
+        <link rel="stylesheet" type="text/css" href="css/xsstyle.css">
+        <link rel="icon" href="images//favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="out">
+            <div class="toolbar">
+                <h1 style="font-size: 15px; padding-top: 20px;"><a  href="javascript:scroll(0,0);">Sekiro </a></h1>
+                <div class="dropdown">
+                  <button class="dropbtn">The Toolbar here!</button> 
+                  <button class="dropbtn2"><svg viewBox="0 0 100 80" width="30" height="30">
+                    <rect fill="white" width="100" height="10"></rect>
+                    <rect fill="white" y="30" width="100" height="10"></rect>
+                    <rect fill="white" y="60" width="100" height="10"></rect>
+                  </svg></button> 
+                  <div class="dropdown-content2">
+                      <a href="index.html" target="_blank">Overview</a>
+                      <a href="sekiro.html" target="_blank">Sekiro</a>
+                      <a href="#" target="_blank">Zelda</a>
+                      <a href="darksoul3.html" target="_blank">Dark Soul</a>
+                      <a href="#" target="_blank">Monster Hunter</a>
+                      <a href="introduction.html" target="_blank">Introduction</a>
+                  </div>
+                </div> 
+              </div>
+              <div class="tophead">
+                  <div class="headpic">
+                        <div class="headtext">
+                            <h1>Sekiro: Shadow Die Twice</h1>
+                        </div>
+                  </div>
+
+                  <div class="review">
+                    
+                    <div class="slide">
+                        <q>BEST ACTION GAME OF 2019</q>
+                        <p></br></br>-IGN</p>
+                    </div>
+                    <div class="slide">
+                        <q>GAME OF THE YEAR 2019</q>
+                        <p></br></br>-GAMESPOT</p>
+                    </div>
+                    <div class="slide">
+                        <q>SPECTACULAR</q>
+                        <p></br></br>-POLYGON</p>
+                    </div>
+                    <div class="slide">
+                        <q>2019 GAME OF THE YEAR</q>
+                        <p></br></br>-THE GAME AWARDS</p>
+                    </div>
+                    <a class="pre1" onclick="nextSlide()">&lt;&lt;</a>
+                    <a class="next1" onclick="preSlide()">&gt;&gt;</a>
+                  </div>
+              </div>
+              
+              <div class="review">
+                  
+              </div>
+              
+              
+            </div>
+
+
+            <script>
+                var index = 1;
+
+                function nextSlide() {
+                    showSlide(index=index+1);
+                }
+
+                function preSlide(){
+                    showSlide(index=index-1);
+                }
+
+                function showSlide(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("slide");
+                    if (n > slides.length) {
+                        index = 1
+                    }
+                    if (n < 1) {
+                        index = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[index-1].style.display = "block";
+                }
+                showSlide(index);
+                window.setInterval(nextSlide,6000);
+            </script>

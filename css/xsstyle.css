@@ -718,6 +718,12 @@ html, body,h1, h2, p, a, ul, li,footer, header, menu, nav, section, pre{
                 position: relative;
             }
 
+            .line{
+                width:100%;
+                height:20px;
+                background-color: rgb(54, 2, 2);
+            }
+
             .pre1{
                 position: absolute;
                 bottom:110px;
@@ -727,6 +733,35 @@ html, body,h1, h2, p, a, ul, li,footer, header, menu, nav, section, pre{
                 position: absolute;
                 right:0;
                 bottom:110px;
+            }
+
+            .title{
+                width:100%;
+                text-align: center;
+                
+                
+            }
+
+            #tp{
+                font-size: 50px;
+                font-family: 'Permanent Marker', cursive;
+                color: rgb(114, 14, 14);
+                
+            }
+
+            #tt{
+                color:rgb(235, 247, 247);
+                font-size: 25px;
+                font-family: sans-serif;
+                text-align: center;
+                padding:9%;
+                padding-top:5%;
+            }
+
+            .title img{
+                width:90%;
+                margin-top: 3%;
+                border-radius:7%;
             }
 
             .slide{
@@ -775,4 +810,3 @@ html, body,h1, h2, p, a, ul, li,footer, header, menu, nav, section, pre{
                     bottom:100px;
                 }
             }
-        

@@ -1,0 +1,136 @@
+/*page2 darksoul*/
+iframe{
+    height:720px;
+    width:1280px;
+    margin-top: 50px;
+}
+
+#one{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    width:100%;
+    
+}
+
+.row1  {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: rgb(29, 30, 31);
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff ;
+    
+    }
+    
+    .row1 .image {
+        border-radius: 0;
+        width: 40%;
+    }
+    
+    
+        .row1 .image img {
+            border-radius: 0;
+            width: 100%;
+        }
+    
+    
+    .row1 .content {
+        width: 60%;
+        height:360px;
+    }
+    
+    .row2  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        background: rgb(29, 30, 31);
+        border-top:1px solid #fff;
+        border-bottom:1px solid #fff ;
+    }
+    
+        .row2 .image {
+            border-radius: 0;
+            width: 40%;
+        }
+            .row2 .image img {
+                border-radius: 0;
+                width: 100%;
+            }
+    
+        .row2 .content {
+            width: 60%;
+            height:360px;
+            background-color: rgba(82, 81, 78, 0.226);
+        }
+    
+
+
+
+@media screen and (max-width: 1280px){
+    iframe{
+        height:600px;
+        width:1066px;
+        
+    }
+}
+@media screen and (max-width: 1066px){
+    iframe{
+        height:500px;
+        width:888px; 
+    }
+}
+
+@media screen and (max-width: 980px){
+    .row1 {
+        display: block;
+    }
+
+    .row2 {
+        display: block;
+    }
+
+
+        .row1 .image {
+            width: 100%;
+        }
+
+        .row2 .image {
+            width: 100%;
+        }
+
+        .row1 .content {
+            
+            text-align: center;
+            width: 100%;
+        }
+
+        .row2 .content {
+            
+            text-align: center;
+            width: 100%;
+        }
+}
+
+@media screen and (max-width: 888px){
+    iframe{
+        height:400px;
+        width:711px; 
+    }
+}
+
+@media screen and (max-width:660px) {
+    iframe{
+        height:300px;
+        width:533px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    iframe{
+        height:168px;
+        width:300px;
+    }
+
+}

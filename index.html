@@ -1,18 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Game Club</title>
         <link rel="stylesheet" type="text/css" href="css/xsstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="icon" href="images//favicon.ico" type="image/x-icon">
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div id="overlay" onclick="off()">
         <h1>
-        </br></br></br></br></br></br></br></br>Welcome!</br></br></br></br></br>This is the website of game recommendation 
-        </br></br></br></br>from Chinese students in UW Eau Claire!</h1>
+        <br><br><br><br><br><br><br><br>Welcome!<br><br><br><br><br>This is the website of game recommendation 
+        <br><br><br><br>from Chinese students in UW Eau Claire!</h1>
         <h1>We discuss and choose some best games we like for you</h1>
-        </br><h1>Hope you enjoy them.</h1>
-    </br></br></br></br></br><p style="color: rgb(255, 255, 255); text-align: center;">......click to close......</p>
+        <br><h1>Hope you enjoy them.</h1>
+    <br><br><br><br><br><p style="color: rgb(255, 255, 255); text-align: center;">......click to close......</p>
         </div>
         <div class="out">
             <div class="toolbar">
@@ -27,9 +30,8 @@
                   <div class="dropdown-content2">
                      <a href="index.html" target="_blank">Overview</a>
                       <a href="sekiro.html" target="_blank">Sekiro</a>
-                      <a href="#" target="_blank">Zelda</a>
                       <a href="darksoul3.html" target="_blank">Dark Soul</a>
-                      <a href="#" target="_blank">Monster Hunter</a>
+                      <a href="monsterhunter.html" target="_blank">Monster Hunter</a>
                       <a href="introduction.html" target="_blank">Introduction</a>
                   </div>
                 </div> 
@@ -41,12 +43,12 @@
             </div>
             <div class="scrinner">
                 <div class="pointer1">
-                <a class="pre" onclick="pre()" id="autochange" ></br></br>&lt;&lt;</a></div>
+                <a class="pre" onclick="pre()" id="autochange" ><br><br>&lt;&lt;</a></div>
                 <a id="link1" href="https://www.zelda.com/" target="_blank" >
                 
-                <img id="showpic" src="images//1.jpg"></a>
+                <img id="showpic" src="images//1.jpg" alt="Recommended games"></a>
                 <div class="pointer2">
-                <a class="next" onclick="next()"></br></br>&gt;&gt;</a>
+                <a class="next" onclick="next()"><br><br>&gt;&gt;</a>
                 </div>
             </div>
         </div>
@@ -54,21 +56,21 @@
         <div class="menu">
             <div class="menucontent">
             <ul id="menu1">
-                <li><button class="menu12" onclick="menuview(event, 'game1')" id="showfirst">Zelda</button></li>
+                <li><button class="menu12" onclick="menuview(event, 'game1')" id="showfirst">Monster Hunter</button></li>
                 <li><button class="menu12" onclick="menuview(event, 'game2')">Sekiro</button></li>
                 <li><button class="menu12" onclick="menuview(event, 'game3')">Dark Soul</button></li>
-                <li><button class="menu12" onclick="menuview(event, 'game4')">Monster Hunter</button></li>
+                <li><button class="menu12" onclick="menuview(event, 'game4')">Zelda</button></li>
                 </ul>
             </div>
-            <div id="game1" class="content" >
+            <div id="game4" class="content" >
                 <div class="flex-container">
                 <div class="gamepic">
-                <img src="images//zelda-breath-of-the-wild-reviews.png">
+                <img src="images//zelda-breath-of-the-wild-reviews.png" alt="Zelda">
                 </div>
                 
                 <div class="gametext">
                     <h3>Zelda: Breath of wild</h3>
-                </br></br>
+                <br><br>
                     <p>&nbsp;&nbsp; Breath of the Wild is an action-adventure
  game set in an open world environment where
  players are tasked with exploring the kingdom 
@@ -78,8 +80,8 @@
  of defined entrances or exits to areas, scant 
  instruction given to the player, and encouragement 
  to explore freely.</p>
-                    </br>
-                    <i><a href="#">>>Explore more</a></i>
+                    
+                    
                     
                     
                     
@@ -89,12 +91,12 @@
               <div id="game2" class="content">
                 <div class="flex-container">
                     <div class="gamepic">
-                    <img src="images//sekiro.jpg">
+                    <img src="images//sekiro.jpg" alt="Sekiro">
                     </div>
                     
                     <div class="gametext">
                         <h3>Sekiro: Shadow Die Twice</h3>
-                    </br></br>
+                    <br><br>
                         <p>&nbsp;&nbsp; In Sekiro: Shadows Die Twice you are the 
   “one-armed wolf”, a disgraced and disfigured
  warrior rescued from the brink of death. Bound 
@@ -104,8 +106,8 @@
  Ashina clan. When the young lord is captured, 
  nothing will stop you on a perilous quest to 
  regain your honor, not even death itself.</p>
-                        </br>
-                        <i><a href="#">>>Explore more</a></i>
+                        <br>
+                        <i><a href="sekiro.html">>>Explore more</a></i>
                         
                     </div>
                     </div>
@@ -113,12 +115,12 @@
               <div id="game3" class="content">
                 <div class="flex-container">
                     <div class="gamepic">
-                    <img src="images/DS2.jpg">
+                    <img src="images/DS2.jpg" alt="Dark soul 3">
                     </div>
                     
                     <div class="gametext">
                         <h3>Dark Soul III</h3>
-                    </br></br>
+                    <br><br>
                         <p>&nbsp;&nbsp; In Dark Souls III the player 
                             controls a character from a third-person perspective through 
                             the dark fantasy world of Lothric.  The gameplay is similar to 
@@ -130,27 +132,27 @@
                             New gameplay elements include the return of the magic meter from 
                             Demon's Souls, and a new combat system, giving player's additional 
                             weapon-specific skills that provide power-ups or deliver powerful special attacks.</p>
-                        </br>
+                        <br>
                         <i><a href="darksoul3.html">>>Explore more</a></i>
                         
                     </div>
                     </div>
               </div>
-              <div id="game4" class="content">
+              <div id="game1" class="content">
                 <div class="flex-container">
                     <div class="gamepic">
-                    <img src="images/mhw.jpg">
+                    <img src="images/mhw.jpg" alt="Monster Hunter World">
                     </div>
                     
                     <div class="gametext">
                         <h3>Monster Hunter World</h3>
-                    </br></br>
+                    <br><br>
                         <p>&nbsp;&nbsp;Battle gigantic monsters in epic locales.
                             In the Monster Hunter World, as a hunter, you'll take on quests to hunt monsters in a variety of habitats.
                             Take down these monsters and receive materials that you can use to 
                             create stronger weapons and armor in order to hunt even more dangerous monsters.</p>
-                        </br>
-                        <i><a href="#">>>Explore more</a></i>
+                        <br>
+                        <i><a href="monsterhunter.html">>>Explore more</a></i>
                         
                     </div>
                     </div>
@@ -170,100 +172,7 @@
             </ul>
     </div></div>
 </div>
-    </body>
-    <script>
+<script src="js/index.js"></script>
+</body>
 
-            
-        function menuview(evt,gamename){
-            var i, content, menu12;
-            content=document.getElementsByClassName("content");
-            for(i=0;i<content.length;i++){
-                content[i].style.display="none";
-            }
-            menu12=document.getElementsByClassName("menu12");
-            for(i=0;i<menu12.length;i++){
-                menu12[i].className = menu12[i].className.replace(" active", "");
-            }
-            document.getElementById(gamename).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        document.getElementById("showfirst").click();
-
-        var imgs=["images//1.jpg","images//2.jpg","images//3.jpg","images//4.jpg"];
-        var links=["https://www.zelda.com/","https://store.steampowered.com/agecheck/app/374320/#","http://www.monsterhunterworld.com/us/","https://www.sekirothegame.com/"];
-        var i=0,j=0;
-        function pre(){
-            var show=document.getElementById("showpic");
-            var link=document.getElementById("link1");
-            removeclass();
-            setTimeout(function(){
-                addclass();
-            }, 1500);
-            i=i-1;
-            if(i<0){
-                i=3;
-            }
-            show.src=imgs[i];
-            link.href=links[i];
-        }
-        function next(){
-            var show=document.getElementById("showpic");
-            var link=document.getElementById("link1");
-            removeclass();
-            setTimeout(function(){
-                addclass();
-            }, 1500);
-
-            i=i+1;
-            if(i>=4){
-                i=0;
-            }
-            show.src=imgs[i];
-            link.href=links[i];    
-        }
-        window.setInterval(next,6000);
-
-        function on() {
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function off() {
-             document.getElementById("overlay").style.display = "none";
-        }
-        function show(){
-            document.getElementById("showpic").style.display="block";
-        }
-        window.onload=on;
-
-        function addclass() {
-            var element = document.getElementById("showpic");
-            element.classList.remove("effect");
-        }
-
-        function removeclass() {
-            var element = document.getElementById("showpic");
-            element.classList.add("effect");
-        }
-		/*function addClass(current,newclass) {
-		    var oldClass = current.className;
-		    var blank = oldClass != ''?' ':'';
-            var newClass = oldClass + blank + newclass;
-            current.className = newClass;    
-		}
-
-		function removeClass(current,newclass) {
-		    var classNames = current.className.split(/\s+/);
-		    current.className = classNames.filter(function(item){
-		        return item !== newclass;
-			}).join(' ');
-		}
-        var new1 = document.getElementById('showpic');
-        */
-
-
-        
-		
-		
-		 
-    </script>
 </html>

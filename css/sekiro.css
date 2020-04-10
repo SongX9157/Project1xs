@@ -1,0 +1,141 @@
+/*sekiro page*/
+.tophead{
+                
+    width: 100%;
+    
+}
+
+.pre1,.next1{
+    cursor: pointer;
+    position: relative;
+    font-size: 33px;
+    color:azure;
+    font-weight: bold;
+    text-align: center;
+}
+
+.headpic{
+    width:100%;
+    padding-top: 5%;
+    padding-bottom:50%;
+    background-color: gray;
+    text-align: center;
+    background-image: url(../images/sk1.jpg);
+    background-size:100% ;
+    background-repeat: no-repeat;
+}
+
+.headtext{
+    position: absolute;
+    left:50%;
+    top:15%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-size: 40px;
+}
+.headpic img{
+    
+    width: 100%;
+}
+
+.review{
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.274);
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.line{
+    width:100%;
+    height:20px;
+    background-color: rgb(54, 2, 2);
+}
+
+.pre1{
+    position: absolute;
+    bottom:110px;
+}
+
+.next1{
+    position: absolute;
+    right:0;
+    bottom:110px;
+}
+
+.title{
+    width:100%;
+    text-align: center;
+    
+    
+}
+
+.titletext{
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(114, 14, 14);
+    
+}
+
+.contenttext{
+    color:rgb(235, 247, 247);
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    padding:9%;
+    padding-top:5%;
+}
+
+.title img{
+    width:90%;
+    margin-top: 3%;
+    border-radius:7%;
+}
+
+.slide{
+    width:100%;
+    text-align: center;
+    display: none;
+    height:25%;
+    padding-top:10%;
+    padding-bottom:50px;
+}
+
+.slide p{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.slide q{
+    font-size:50px;
+    color:rgb(143, 122, 16);
+    font-family: fantasy;
+}
+
+@media screen and (max-width:980px) {
+    .headtext{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .headtext{
+        font-size: 15px;
+    }
+
+    .slide q{
+        font-size:25px;
+    }
+
+    .slide p{
+        font-size: 15px;
+    }
+
+    .pre1{
+        bottom:100px;
+    }
+
+    .next1{
+        bottom:100px;
+    }
+}

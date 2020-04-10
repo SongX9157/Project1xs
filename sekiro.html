@@ -1,10 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Game Club</title>
         <link rel="stylesheet" type="text/css" href="css/xsstyle.css">
+        <link rel="stylesheet" type="text/css" href="css/sekiro.css">
         <link rel="icon" href="images//favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="out">
@@ -38,19 +41,19 @@
                     
                     <div class="slide">
                         <q>BEST ACTION GAME OF 2019</q>
-                        <p></br></br>-IGN</p>
+                        <p><br><br>-IGN</p>
                     </div>
                     <div class="slide">
                         <q>GAME OF THE YEAR 2019</q>
-                        <p></br></br>-GAMESPOT</p>
+                        <p><br><br>-GAMESPOT</p>
                     </div>
                     <div class="slide">
                         <q>SPECTACULAR</q>
-                        <p></br></br>-POLYGON</p>
+                        <p><br><br>-POLYGON</p>
                     </div>
                     <div class="slide">
                         <q>2019 GAME OF THE YEAR</q>
-                        <p></br></br>-THE GAME AWARDS</p>
+                        <p><br><br>-THE GAME AWARDS</p>
                     </div>
                     <a class="pre1" onclick="nextSlide()">&lt;&lt;</a>
                     <a class="next1" onclick="preSlide()">&gt;&gt;</a>
@@ -59,57 +62,31 @@
               <div class="line"></div>
               <div class="review" style="background-color: rgba(0, 0, 0, 0.342); margin-left: 0; margin-right: 0;">
                   <div class="title">
-                  <p id="tp">Overview</p>
-                  <img src="images//sk4.jpg">
-                  <p id="tt"></br>Sekiro: Shadow die twice is an action role-playing game produced by From software, the developer of the dark soul series. The story of the game takes place at the end of the 16th century in the Warring States period of Japan. Players will play the role of Ninja, perform tasks for their lords, and witness a world of constant bloodshed. The game takes the sword as the core of the fight, and then enhances the fight through various props and artificial arms.</p>
+                  <p class="titletext">Overview</p>
+                  <img src="images//sk4.jpg" alt="ninja sekiro">
+                  <p class="contenttext"><br>Sekiro: Shadow die twice is an action role-playing game produced by From software, the developer of the dark soul series. The story of the game takes place at the end of the 16th century in the Warring States period of Japan. Players will play the role of Ninja, perform tasks for their lords, and witness a world of constant bloodshed. The game takes the sword as the core of the fight, and then enhances the fight through various props and artificial arms.</p>
                   </div>
               </div>
 
               <div class="review" style="background-color: rgba(0, 0, 0, 0.342); margin-left: 0; margin-right: 0;">
                 <div class="title">
-                <p id="tp">Prosthetic Arms</p>
-                <img src="images//sk2.jpg">
-                <p id="tt"></br>In Sekiro: the shadow dies twice, the player will play the Ninja who losed his arm. He uses prosthetic arm as an alternative, but the effect is much more than his original arm. In addition to all kinds of equipment and props, the Ninja arm has its own skills, which can help the player to have more flexible fighting skills in the process of fighting. In most of the game experience, the prosthetic arm will play an important role in travelling. Through the hook lock hidden in the arm, players will experience the feeling of flying on the eaves and walking on the wall.</p>
+                <p class="titletext">Prosthetic Arms</p>
+                <img src="images//sk2.jpg" alt="the prosthetic arm">
+                <p class="contenttext"><br>In Sekiro: the shadow dies twice, the player will play the Ninja who losed his arm. He uses prosthetic arm as an alternative, but the effect is much more than his original arm. In addition to all kinds of equipment and props, the Ninja arm has its own skills, which can help the player to have more flexible fighting skills in the process of fighting. In most of the game experience, the prosthetic arm will play an important role in travelling. Through the hook lock hidden in the arm, players will experience the feeling of flying on the eaves and walking on the wall.</p>
                 </div>
             </div>
 
             <div class="review" style="background-color: rgba(0, 0, 0, 0.342); margin-left: 0; margin-right: 0;">
                 <div class="title">
-                <p id="tp">Shinobi Skills</p>
-                <img src="images//sk3.gif">
-                <p id="tt"></br>In Sekiro: the shadow dies twice, the player will play the Ninja who losed his arm. He uses prosthetic arm as an alternative, but the effect is much more than his original arm. In addition to all kinds of equipment and props, the Ninja arm has its own skills, which can help the player to have more flexible fighting skills in the process of fighting. In most of the game experience, the prosthetic arm will play an important role in travelling. Through the hook lock hidden in the arm, players will experience the feeling of flying on the eaves and walking on the wall.</p>
+                <p class="titletext">Shinobi Skills</p>
+                <img src="images//sk3.gif" alt="special skill">
+                <p class="contenttext"><br>In Sekiro: the shadow dies twice, the player will play the Ninja who losed his arm. He uses prosthetic arm as an alternative, but the effect is much more than his original arm. In addition to all kinds of equipment and props, the Ninja arm has its own skills, which can help the player to have more flexible fighting skills in the process of fighting. In most of the game experience, the prosthetic arm will play an important role in travelling. Through the hook lock hidden in the arm, players will experience the feeling of flying on the eaves and walking on the wall.</p>
                 </div>
             </div>
               
               
             </div>
+            <script src="js/sekiro.js"></script>
+            </body>
+</html>
 
-
-            <script>
-                var index = 1;
-
-                function nextSlide() {
-                    showSlide(index=index+1);
-                }
-
-                function preSlide(){
-                    showSlide(index=index-1);
-                }
-
-                function showSlide(n) {
-                    var i;
-                    var slides = document.getElementsByClassName("slide");
-                    if (n > slides.length) {
-                        index = 1
-                    }
-                    if (n < 1) {
-                        index = slides.length
-                    }
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    slides[index-1].style.display = "block";
-                }
-                showSlide(index);
-                window.setInterval(nextSlide,6000);
-            </script>

@@ -13,6 +13,17 @@ iframe{
     
 }
 
+.content p{
+    text-align: left;
+    padding:3%;
+}
+
+.content h2{
+    text-align: center;
+}
+
+
+
 .row1  {
     display: flex;
     flex-direction: row-reverse;
@@ -83,6 +94,10 @@ iframe{
 }
 
 @media screen and (max-width: 980px){
+
+    .content{
+        min-height: 450px;
+    }
     .row1 {
         display: block;
     }
@@ -101,14 +116,12 @@ iframe{
         }
 
         .row1 .content {
-            
-            text-align: center;
+              
             width: 100%;
         }
 
         .row2 .content {
             
-            text-align: center;
             width: 100%;
         }
 }
@@ -131,6 +144,10 @@ iframe{
     iframe{
         height:168px;
         width:300px;
+    }
+
+    .content{
+        min-height: 470px;
     }
 
 }

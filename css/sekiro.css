@@ -80,8 +80,8 @@
 .contenttext{
     color:rgb(235, 247, 247);
     font-size: 25px;
-    font-family: sans-serif;
-    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
     padding:9%;
     padding-top:5%;
 }

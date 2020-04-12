@@ -1,6 +1,5 @@
 html, body,h1, h2, p, a, ul, li,footer, header, menu, nav, pre{
-    font: inherit;
-    vertical-align: baseline;      
+    font: inherit;     
 }
 
 *{
@@ -84,8 +83,9 @@ width:60%;
 .content{
 font-size: x-large;
 color:azure;
-font-family:'Calibri';
+font-family:'Times New Roman', Times, serif;
 background-color: rgb(54, 52, 52);
+
 
 }
 
@@ -160,7 +160,7 @@ background-color: #1f252b;
     .content{
         font-size: x-large;
         color:azure;
-        font-family:'Calibri';
+        font-family:'Times New Roman', Times, serif;
         background-color: rgb(54, 52, 52);
          
     }
